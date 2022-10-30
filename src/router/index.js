@@ -51,7 +51,48 @@ const router = createRouter({
       path: '/databinding/attr',
       name: 'DataBindingAttributeView',
       component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingAttributeView.vue')
+    },
+    {
+      path: '/databinding/list',
+      name: 'DataBindingListView',
+      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingListView.vue')
+    },
+    {
+      path: '/databinding/class',
+      name: 'DataBindingClassView',
+      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingClassView.vue')
+    },
+    {
+      path: '/databinding/style',
+      name: 'DataBindingStyleView',
+      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingStyleView.vue')
+    },
+    {
+      path: '/event/click',
+      name: 'EventClickView',
+      component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */'../views/2_event/EventClickView.vue')
+    },
+    {
+      path: '/event/change',
+      name: 'EventChangeView',
+      component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */'../views/2_event/EventChangeView.vue')
+    },
+    {
+      path: '/event/key',
+      name: 'EventKeyView',
+      component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */'../views/2_event/EventKeyView.vue')
+    },
+    {
+      path: '/component',
+      name: 'ComponentView',
+      component: () => import('../views/ComponentView.vue')
+    },
+    {
+      path: '/direcetive',
+      name: 'DirecetiveView',
+      component: () => import('../views/DirecetiveView.vue')
     }
+    
     
     
   ]

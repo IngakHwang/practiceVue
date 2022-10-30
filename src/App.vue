@@ -11,10 +11,37 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/databinding/string">String</RouterLink>
-        <RouterLink to="/databinding/html">HTML</RouterLink>
+        <div>
+          <h2>Default</h2>
+          <RouterLink to="/">Home</RouterLink>
+        </div>
+        <div>
+          <h2>Direcetive</h2>
+          <RouterLink to="/direcetive">Direcetive</RouterLink>
+        </div>
+        <div>
+          <h2>Component Pratice</h2>
+          <RouterLink to="/component">Component</RouterLink>
+        </div>
+        <div>
+          <h2>Databinding</h2>
+          <RouterLink to="/databinding/string">String</RouterLink>
+          <RouterLink to="/databinding/html">HTML</RouterLink>
+          <RouterLink to="/databinding/input">Input</RouterLink>
+          <RouterLink to="/databinding/select">Select</RouterLink>
+          <RouterLink to="/databinding/checkbox">Checkbox</RouterLink>
+          <RouterLink to="/databinding/radio">Radio</RouterLink>
+          <RouterLink to="/databinding/attr">Attribute</RouterLink>
+          <RouterLink to="/databinding/list">List</RouterLink>
+          <RouterLink to="/databinding/class">Class</RouterLink>
+          <RouterLink to="/databinding/style">Style</RouterLink>
+        </div>
+        <div>
+          <h2>Event</h2>
+          <RouterLink to="/event/click">Click</RouterLink>
+          <RouterLink to="/event/change">Change</RouterLink>
+          <RouterLink to="/event/key">Key</RouterLink>
+        </div>
       </nav>
     </div>
   </header>
