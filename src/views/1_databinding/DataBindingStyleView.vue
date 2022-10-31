@@ -2,7 +2,8 @@
     <div>
         <div style="color:red; font-size: 30px">스타일 바인딩 : 글씨 - red, 폰트크기 - 30px</div>
         <div :style="style1">스타일 바인딩 : 글씨 - green, 폰트크기 - 30px</div>
-        <button @click="style1.color='blue'">색상 바꾸기</button>
+        <!-- <button @click="style1.color='blue'">색상 바꾸기</button> -->
+        <button @click="changeColor">색상 바꾸기</button>
     </div>
 </template>
 
@@ -11,6 +12,7 @@ export default {
     components: {},
     data() {
         return{
+            isGreen: true,
             style1: {
                 color: 'green',
                 fontSize: '30px'
@@ -23,6 +25,16 @@ export default {
     mounted() {}, 
     unmounted() {},
     methods: {
+        changeColor(){
+            if(this.isGreen != false){
+                this.style1.color = 'blue'
+                this.isGreen = false
+            }else{
+                this.style1.color = 'green'
+                this.isGreen = true
+            }
+            
+        }
     }
 }
 </script>

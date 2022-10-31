@@ -15,8 +15,7 @@ export default {
     components: {},
     data() {
         return{
-            selectedCity: '064',
-            
+            selectedCity: '',
         }
     },        
     setup() {},

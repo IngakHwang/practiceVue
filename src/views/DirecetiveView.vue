@@ -1,12 +1,35 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive} from 'vue'
+import ButtonCounter from '../components/ButtonCounter.vue'
 
 const title = ref('Direcetive')
 
 const vtextMsg = ref('v-text 메시지입니다.')
 const vshowValue = ref(true)
 const vifValue = ref('D')
-const vforItem = ref([{message:'Foo'}, {message:'Bar'}])
+const vforItem = ref(
+        [
+            {message:'Foo'}, 
+            {message:'Bar'}, 
+            {message:'Third'},
+            {message:'Fouth'},
+            {message:'Fifth'}
+        ]
+    )
+
+const link = reactive({
+    id: "naver.com",
+    to: "http://naver.com",
+    title: "Naver",
+    label: "네이버"
+})
+const btnDisable = ref(true)
+
+const message = ref('')
+
+function greet(){
+    alert(`${link.label}`)
+}
 
 </script>
 
@@ -66,12 +89,35 @@ const vforItem = ref([{message:'Foo'}, {message:'Bar'}])
         <div v-for="item in vforItem" :key="item.id">
             {{item.message}}
         </div>
+
+        <div>
+            <h2>v-bind</h2>
+            <a v-bind:id = "link.id" v-bind:href="link.to" :title="link.title">
+                {{link.label}}
+            </a>
+            <br>
+            <button :disabled="btnDisable">disable 속성 활성화</button>
+        </div>
+
+        <div>
+            <h2>v-model</h2>
+            <p> 메시지 내용 : {{message}}</p>
+            <input v-model="message" placeholder="메시지 입력"/>
+        </div>
+
+        <div>
+            <h2>v-on</h2>
+            <button v-on:click="greet">버튼클릭</button>
+        </div>
+
+        <div>
+            <h2>컴포넌트</h2>
+            <ButtonCounter></ButtonCounter>
+            <ButtonCounter/>
+        </div>
     </div>
 </template>
 
 <style scoped>
-.guide{
-    border : 1px solid blue;
-}
 
 </style>

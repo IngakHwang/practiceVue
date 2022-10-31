@@ -12,7 +12,11 @@
             <input type="checkbox" name="" id="js" value="JS" v-model="favoriteLang"/>
             <label for="js">JavaScript</label>
         </div>
-        <div>선택한 지역 : {{ favoriteLang }}</div>
+        <div>
+            <input type="checkbox" name="" id="vue" value="VUE" v-model="favoriteLang"/>
+            <label for="vue">Vue</label>
+        </div>
+        <div>선택한 리스트 : {{ favoriteLang }}</div>
     </div>
 </template>
 
@@ -21,7 +25,7 @@ export default {
     components: {},
     data() {
         return{
-            favoriteLang: ['JS'],
+            favoriteLang: [],
             
         }
     },        

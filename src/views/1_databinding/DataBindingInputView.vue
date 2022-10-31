@@ -34,9 +34,10 @@ export default {
     methods: {
         myFunction(){
             console.log(this.userId)
+            alert(this.userId)
         },
         changeData(){
-            this.userId = 'Jeremy'
+            this.userId = 'Ingak'
         }
     }
 }

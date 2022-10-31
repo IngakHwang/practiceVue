@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Hello {{ userName }}</h1>
-        <p>{{message}}</p>
+        <h1>{{message}} {{ userName }}</h1>
+        <p>{{message + userName}}</p>
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            userName: "John Doe",
+            userName: "Ingak",
             message: 'Welcome',
             arr: [],
             obj: {}

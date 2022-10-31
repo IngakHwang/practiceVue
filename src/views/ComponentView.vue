@@ -18,7 +18,7 @@ const posts = ref([
 ])
 
 const postFontSize = ref(1)
-const testTitle = ref('Antman')
+const blogTitle = ref('Antman')
 
 const first = ref('이름')
 const last = ref('성')
@@ -32,19 +32,18 @@ provide('message', grandParentMessage)
     <div class="guide">
         <h1>{{title}}</h1>
         
-        <h2>컴포넌트 이벤트1</h2>
-
+        <h2>컴포넌트 이벤트 - props, emit</h2>
         <div :style="{ fontSize : postFontSize + 'em'}">
             <BlogPost 
-                :title="testTitle"
-                content="짜잔짜장" 
+                :title="blogTitle"
                 :is-show="true"
+                content="글자 버튼 누르면 글씨가 커짐" 
                 @some-event="(n) => postFontSize += n"
             />
         </div>
-        
+
         <div>
-            <h2>컴포넌트 이벤트2</h2>
+            <h2>컴포넌트 v-for</h2>
             <BlogPost
                 v-for="post in posts"
                 v-bind:key="post.id"
@@ -53,9 +52,9 @@ provide('message', grandParentMessage)
                 :content="post.content"
             />
         </div>
-        
+
         <div>
-            <h2>Slot</h2>
+            <h2>컴포넌트 slot</h2>
             <AlertBox>
                 slot 내 문자열
 
@@ -72,11 +71,6 @@ provide('message', grandParentMessage)
                 <span style="color:cyan">클릭하기!</span>
                 <AwesomeIcon/>
             </FancyButton>
-        </div>
-
-        <div>
-            <h2>컴포넌트 재사용</h2>
-            <DirecetiveSample/>
         </div>
         
         <div>

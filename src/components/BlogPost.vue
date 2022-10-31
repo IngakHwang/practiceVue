@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['title', 'content', 'isShow'])
+defineProps(['title', 'isShow','content' ])
 
 </script>
 

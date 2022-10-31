@@ -20,67 +20,67 @@ const router = createRouter({
     {
       path: '/databinding/string',
       name: 'DataBindingStringView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingStringView.vue')
+      component: () => import('../views/1_databinding/DataBindingStringView.vue')
     },
     {
       path: '/databinding/html',
       name: 'DataBindingHtmlView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingHtmlView.vue')
+      component: () => import('../views/1_databinding/DataBindingHtmlView.vue')
     },
     {
       path: '/databinding/input',
       name: 'DataBindingInputView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingInputView.vue')
+      component: () => import('../views/1_databinding/DataBindingInputView.vue')
     },
     {
       path: '/databinding/select',
       name: 'DataBindingSelectView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingSelectView.vue')
+      component: () => import('../views/1_databinding/DataBindingSelectView.vue')
     },
     {
       path: '/databinding/checkbox',
       name: 'DataBindingCheckboxView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingCheckboxView.vue')
+      component: () => import('../views/1_databinding/DataBindingCheckboxView.vue')
     },
     {
       path: '/databinding/radio',
       name: 'DataBindingRadioView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingRadioView.vue')
+      component: () => import('../views/1_databinding/DataBindingRadioView.vue')
     },
     {
       path: '/databinding/attr',
       name: 'DataBindingAttributeView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingAttributeView.vue')
+      component: () => import('../views/1_databinding/DataBindingAttributeView.vue')
     },
     {
       path: '/databinding/list',
       name: 'DataBindingListView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingListView.vue')
+      component: () => import('../views/1_databinding/DataBindingListView.vue')
     },
     {
       path: '/databinding/class',
       name: 'DataBindingClassView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingClassView.vue')
+      component: () => import('../views/1_databinding/DataBindingClassView.vue')
     },
     {
       path: '/databinding/style',
       name: 'DataBindingStyleView',
-      component: () => import(/* webpackChunkName: "databindng", webpackPrefetch:true */'../views/1_databinding/DataBindingStyleView.vue')
+      component: () => import('../views/1_databinding/DataBindingStyleView.vue')
     },
     {
       path: '/event/click',
       name: 'EventClickView',
-      component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */'../views/2_event/EventClickView.vue')
+      component: () => import('../views/2_event/EventClickView.vue')
     },
     {
       path: '/event/change',
       name: 'EventChangeView',
-      component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */'../views/2_event/EventChangeView.vue')
+      component: () => import('../views/2_event/EventChangeView.vue')
     },
     {
       path: '/event/key',
       name: 'EventKeyView',
-      component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */'../views/2_event/EventKeyView.vue')
+      component: () => import('../views/2_event/EventKeyView.vue')
     },
     {
       path: '/component',

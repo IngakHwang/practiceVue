@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h2>v-bind:class</h2>
         <div :class="{'text-red': hasError, 'active' : isActive}">클래스 바인딩</div>
         <div :class="{active : true}">Test</div>
         <div :class="class2">클래스 바인딩2</div>

@@ -12,7 +12,11 @@
             <input type="radio" name="" id="js" value="JS" v-model="favoriteLang"/>
             <label for="js">JavaScript</label>
         </div>
-        <div>선택한 지역 : {{ favoriteLang }}</div>
+        <div>
+            <input type="radio" name="" id="vue" value="VUE" v-model="favoriteLang"/>
+            <label for="vue">Vue</label>
+        </div>
+        <div>선택한 항목 : {{ favoriteLang }}</div>
     </div>
 </template>
 
